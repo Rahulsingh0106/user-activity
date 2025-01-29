@@ -38,9 +38,9 @@
                         <div class="form-group col-md-3">
                             <label for="sort-by">Sort By</label>
                             <select class="form-control" id="sort-by" name="sort_by">
-                                <option value="day">Day</option>
-                                <option value="month">Month</option>
-                                <option value="year">Year</option>
+                                <option value="day" {{ request('sort_by') == 'day' ? 'selected' : '' }}>Day</option>
+                                <option value="month" {{ request('sort_by') == 'month' ? 'selected' : '' }}>Month</option>
+                                <option value="year" {{ request('sort_by') == 'year' ? 'selected' : '' }}>Year</option>
                             </select>
                         </div>
                     </div>
